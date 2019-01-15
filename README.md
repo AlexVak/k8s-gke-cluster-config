@@ -1,4 +1,4 @@
-# k8s-gke-cluster-config
+# Google Cloud Kubernetes Cluster Config
 
 1. Setup Helm
 2. Setup ingress-nginx

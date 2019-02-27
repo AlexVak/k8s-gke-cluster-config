@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # https://github.com/jetstack/cert-manager
 
+#Option 1
+helm install --name cert-manager --namespace kube-system stable/cert-manager
+
+#Option 2
 # Install the CustomResourceDefinition resources separately
 kubectl apply -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.6/deploy/manifests/00-crds.yaml
 
@@ -15,3 +19,5 @@ helm repo update
 
 # Install the cert-manager Helm chart
 helm install --name cert-manager --namespace cert-manager stable/cert-manager
+
+
